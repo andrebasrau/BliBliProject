@@ -3,19 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271AF17725FDDF0400BB4C00 /* StoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271AF17625FDDF0400BB4C00 /* StoreImage.swift */; };
+		272E7D822603422800637BEF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272E7D812603422800637BEF /* DetailViewModel.swift */; };
 		27765A2E25FD253E003AE214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A2D25FD253E003AE214 /* AppDelegate.swift */; };
 		27765A3025FD253E003AE214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A2F25FD253E003AE214 /* SceneDelegate.swift */; };
 		27765A3225FD253E003AE214 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A3125FD253E003AE214 /* ContentView.swift */; };
 		27765A3425FD2540003AE214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27765A3325FD2540003AE214 /* Assets.xcassets */; };
 		27765A3725FD2540003AE214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27765A3625FD2540003AE214 /* Preview Assets.xcassets */; };
 		27765A3A25FD2540003AE214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27765A3825FD2540003AE214 /* LaunchScreen.storyboard */; };
+		27765A4525FD259F003AE214 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4425FD259F003AE214 /* LoginPageViewModel.swift */; };
+		27765A4825FD25C2003AE214 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4725FD25C2003AE214 /* LoginViewModel.swift */; };
+		27765A4B25FD25DC003AE214 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4A25FD25DC003AE214 /* PostListViewModel.swift */; };
+		27765A4F25FD25FD003AE214 /* FetchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4E25FD25FD003AE214 /* FetchUser.swift */; };
+		27765A5325FD2617003AE214 /* NewPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A5225FD2617003AE214 /* NewPostViewModel.swift */; };
+		27765A5625FD262A003AE214 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A5525FD262A003AE214 /* Picker.swift */; };
+		27765A5B25FD2661003AE214 /* dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A5A25FD2661003AE214 /* dictionary.swift */; };
+		27765A5E25FD2675003AE214 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A5D25FD2675003AE214 /* userModel.swift */; };
+		27765A6125FD268A003AE214 /* PostItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6025FD268A003AE214 /* PostItemModel.swift */; };
+		27765A6625FD26A9003AE214 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6525FD26A9003AE214 /* HomeView.swift */; };
+		27765A6925FD26C9003AE214 /* PostItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6825FD26C9003AE214 /* PostItemView.swift */; };
+		27765A6C25FD26E4003AE214 /* PostViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6B25FD26E4003AE214 /* PostViewList.swift */; };
+		27765A6F25FD26FA003AE214 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6E25FD26FA003AE214 /* NewPostView.swift */; };
+		27765A8B25FD299F003AE214 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27765A8A25FD299F003AE214 /* SDWebImageSwiftUI */; };
+		27765AE425FD2F8A003AE214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27765AE325FD2F8A003AE214 /* GoogleService-Info.plist */; };
+		2780775F26026E110026332C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780775E26026E110026332C /* ChatView.swift */; };
+		27EA040B25FF96FC006586AC /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA040A25FF96FC006586AC /* profileView.swift */; };
+		27EA040E25FF9B14006586AC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA040D25FF9B14006586AC /* ProfileViewModel.swift */; };
+		27EA041125FFB6F1006586AC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA041025FFB6F1006586AC /* SettingView.swift */; };
+		27EA041425FFB99E006586AC /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA041325FFB99E006586AC /* SettingViewModel.swift */; };
+		27EA042A2601085A006586AC /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA04292601085A006586AC /* NewsView.swift */; };
+		27EA042D26010B6C006586AC /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA042C26010B6C006586AC /* NewsModel.swift */; };
+		27EA043026010BB0006586AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA042F26010BB0006586AC /* NetworkManager.swift */; };
+		27EA04392601147E006586AC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 27EA04382601147E006586AC /* SwiftyJSON */; };
+		27EA047626012D8E006586AC /* CardCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA047526012D8E006586AC /* CardCarouselView.swift */; };
+		27FF98742602549E00428CAB /* DetailPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF98732602549E00428CAB /* DetailPostView.swift */; };
+		27FF988A2602652800428CAB /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF98892602652800428CAB /* ChatModel.swift */; };
+		6B7EE22901DF8B5C9122791F /* Pods_BliBliTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D160985482C3636509CCF670 /* Pods_BliBliTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271AF17625FDDF0400BB4C00 /* StoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreImage.swift; sourceTree = "<group>"; };
+		272E7D812603422800637BEF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		27765A2A25FD253E003AE214 /* BliBliTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BliBliTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27765A2D25FD253E003AE214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27765A2F25FD253E003AE214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +56,34 @@
 		27765A3625FD2540003AE214 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27765A3925FD2540003AE214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27765A3B25FD2540003AE214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27765A4425FD259F003AE214 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
+		27765A4725FD25C2003AE214 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		27765A4A25FD25DC003AE214 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		27765A4E25FD25FD003AE214 /* FetchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUser.swift; sourceTree = "<group>"; };
+		27765A5225FD2617003AE214 /* NewPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewModel.swift; sourceTree = "<group>"; };
+		27765A5525FD262A003AE214 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		27765A5A25FD2661003AE214 /* dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionary.swift; sourceTree = "<group>"; };
+		27765A5D25FD2675003AE214 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		27765A6025FD268A003AE214 /* PostItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemModel.swift; sourceTree = "<group>"; };
+		27765A6525FD26A9003AE214 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		27765A6825FD26C9003AE214 /* PostItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemView.swift; sourceTree = "<group>"; };
+		27765A6B25FD26E4003AE214 /* PostViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewList.swift; sourceTree = "<group>"; };
+		27765A6E25FD26FA003AE214 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		27765AE325FD2F8A003AE214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2780775E26026E110026332C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		27EA040A25FF96FC006586AC /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		27EA040D25FF9B14006586AC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		27EA041025FFB6F1006586AC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		27EA041325FFB99E006586AC /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		27EA04292601085A006586AC /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		27EA042C26010B6C006586AC /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		27EA042F26010BB0006586AC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		27EA047526012D8E006586AC /* CardCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCarouselView.swift; sourceTree = "<group>"; };
+		27FF98732602549E00428CAB /* DetailPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostView.swift; sourceTree = "<group>"; };
+		27FF98892602652800428CAB /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		3728FADF8B80132636D44F79 /* Pods-BliBliTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BliBliTestProject.debug.xcconfig"; path = "Target Support Files/Pods-BliBliTestProject/Pods-BliBliTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9278598B6ED93BD21CF0AF6B /* Pods-BliBliTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BliBliTestProject.release.xcconfig"; path = "Target Support Files/Pods-BliBliTestProject/Pods-BliBliTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		D160985482C3636509CCF670 /* Pods_BliBliTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BliBliTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EA04392601147E006586AC /* SwiftyJSON in Frameworks */,
+				27765A8B25FD299F003AE214 /* SDWebImageSwiftUI in Frameworks */,
+				6B7EE22901DF8B5C9122791F /* Pods_BliBliTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +105,8 @@
 			children = (
 				27765A2C25FD253E003AE214 /* BliBliTestProject */,
 				27765A2B25FD253E003AE214 /* Products */,
+				2B205A96CD218CC6CD6819D3 /* Pods */,
+				2EC47CCEE51E993E505ADDB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +121,16 @@
 		27765A2C25FD253E003AE214 /* BliBliTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				27765AE325FD2F8A003AE214 /* GoogleService-Info.plist */,
 				27765A2D25FD253E003AE214 /* AppDelegate.swift */,
 				27765A2F25FD253E003AE214 /* SceneDelegate.swift */,
-				27765A3125FD253E003AE214 /* ContentView.swift */,
+				27765A4225FD2570003AE214 /* View */,
 				27765A3325FD2540003AE214 /* Assets.xcassets */,
 				27765A3825FD2540003AE214 /* LaunchScreen.storyboard */,
 				27765A3B25FD2540003AE214 /* Info.plist */,
 				27765A3525FD2540003AE214 /* Preview Content */,
+				27765A5825FD2639003AE214 /* ViewModel */,
+				27765A6325FD2694003AE214 /* Model */,
 			);
 			path = BliBliTestProject;
 			sourceTree = "<group>";
@@ -75,6 +143,71 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		27765A4225FD2570003AE214 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27765A3125FD253E003AE214 /* ContentView.swift */,
+				27765A6525FD26A9003AE214 /* HomeView.swift */,
+				27765A6825FD26C9003AE214 /* PostItemView.swift */,
+				27765A6B25FD26E4003AE214 /* PostViewList.swift */,
+				27765A6E25FD26FA003AE214 /* NewPostView.swift */,
+				27EA040A25FF96FC006586AC /* profileView.swift */,
+				27EA041025FFB6F1006586AC /* SettingView.swift */,
+				27EA04292601085A006586AC /* NewsView.swift */,
+				27EA047526012D8E006586AC /* CardCarouselView.swift */,
+				27FF98732602549E00428CAB /* DetailPostView.swift */,
+				2780775E26026E110026332C /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27765A5825FD2639003AE214 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27765A4425FD259F003AE214 /* LoginPageViewModel.swift */,
+				27765A4725FD25C2003AE214 /* LoginViewModel.swift */,
+				27765A4A25FD25DC003AE214 /* PostListViewModel.swift */,
+				27765A4E25FD25FD003AE214 /* FetchUser.swift */,
+				27765A5225FD2617003AE214 /* NewPostViewModel.swift */,
+				27765A5525FD262A003AE214 /* Picker.swift */,
+				271AF17625FDDF0400BB4C00 /* StoreImage.swift */,
+				27EA040D25FF9B14006586AC /* ProfileViewModel.swift */,
+				27EA041325FFB99E006586AC /* SettingViewModel.swift */,
+				272E7D812603422800637BEF /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27765A6325FD2694003AE214 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27EA042F26010BB0006586AC /* NetworkManager.swift */,
+				27765A5A25FD2661003AE214 /* dictionary.swift */,
+				27765A5D25FD2675003AE214 /* userModel.swift */,
+				27765A6025FD268A003AE214 /* PostItemModel.swift */,
+				27EA042C26010B6C006586AC /* NewsModel.swift */,
+				27FF98892602652800428CAB /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B205A96CD218CC6CD6819D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3728FADF8B80132636D44F79 /* Pods-BliBliTestProject.debug.xcconfig */,
+				9278598B6ED93BD21CF0AF6B /* Pods-BliBliTestProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2EC47CCEE51E993E505ADDB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D160985482C3636509CCF670 /* Pods_BliBliTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,15 +215,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27765A3E25FD2540003AE214 /* Build configuration list for PBXNativeTarget "BliBliTestProject" */;
 			buildPhases = (
+				25405A2ECEDCF80F51E30DCD /* [CP] Check Pods Manifest.lock */,
 				27765A2625FD253E003AE214 /* Sources */,
 				27765A2725FD253E003AE214 /* Frameworks */,
 				27765A2825FD253E003AE214 /* Resources */,
+				95459E391D9AB22BFE664D22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BliBliTestProject;
+			packageProductDependencies = (
+				27765A8A25FD299F003AE214 /* SDWebImageSwiftUI */,
+				27EA04382601147E006586AC /* SwiftyJSON */,
+			);
 			productName = BliBliTestProject;
 			productReference = 27765A2A25FD253E003AE214 /* BliBliTestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +257,10 @@
 				Base,
 			);
 			mainGroup = 27765A2125FD253E003AE214;
+			packageReferences = (
+				27765A8925FD299F003AE214 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				27EA04372601147E006586AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 27765A2B25FD253E003AE214 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,11 +277,54 @@
 			files = (
 				27765A3A25FD2540003AE214 /* LaunchScreen.storyboard in Resources */,
 				27765A3725FD2540003AE214 /* Preview Assets.xcassets in Resources */,
+				27765AE425FD2F8A003AE214 /* GoogleService-Info.plist in Resources */,
 				27765A3425FD2540003AE214 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25405A2ECEDCF80F51E30DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BliBliTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95459E391D9AB22BFE664D22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BliBliTestProject/Pods-BliBliTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BliBliTestProject/Pods-BliBliTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BliBliTestProject/Pods-BliBliTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27765A2625FD253E003AE214 /* Sources */ = {
@@ -146,8 +332,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				27765A2E25FD253E003AE214 /* AppDelegate.swift in Sources */,
+				27EA047626012D8E006586AC /* CardCarouselView.swift in Sources */,
+				272E7D822603422800637BEF /* DetailViewModel.swift in Sources */,
+				27EA042D26010B6C006586AC /* NewsModel.swift in Sources */,
+				27EA042A2601085A006586AC /* NewsView.swift in Sources */,
+				2780775F26026E110026332C /* ChatView.swift in Sources */,
+				27EA041425FFB99E006586AC /* SettingViewModel.swift in Sources */,
+				27FF98742602549E00428CAB /* DetailPostView.swift in Sources */,
+				27EA041125FFB6F1006586AC /* SettingView.swift in Sources */,
+				27EA040E25FF9B14006586AC /* ProfileViewModel.swift in Sources */,
+				27FF988A2602652800428CAB /* ChatModel.swift in Sources */,
+				27765A5B25FD2661003AE214 /* dictionary.swift in Sources */,
+				27765A6625FD26A9003AE214 /* HomeView.swift in Sources */,
+				27765A4525FD259F003AE214 /* LoginPageViewModel.swift in Sources */,
+				27765A4B25FD25DC003AE214 /* PostListViewModel.swift in Sources */,
 				27765A3025FD253E003AE214 /* SceneDelegate.swift in Sources */,
+				27765A4825FD25C2003AE214 /* LoginViewModel.swift in Sources */,
+				27EA043026010BB0006586AC /* NetworkManager.swift in Sources */,
+				27765A6F25FD26FA003AE214 /* NewPostView.swift in Sources */,
+				27EA040B25FF96FC006586AC /* profileView.swift in Sources */,
+				27765A6925FD26C9003AE214 /* PostItemView.swift in Sources */,
+				27765A5325FD2617003AE214 /* NewPostViewModel.swift in Sources */,
+				27765A5E25FD2675003AE214 /* userModel.swift in Sources */,
+				27765A6125FD268A003AE214 /* PostItemModel.swift in Sources */,
 				27765A3225FD253E003AE214 /* ContentView.swift in Sources */,
+				27765A6C25FD26E4003AE214 /* PostViewList.swift in Sources */,
+				27765A5625FD262A003AE214 /* Picker.swift in Sources */,
+				271AF17725FDDF0400BB4C00 /* StoreImage.swift in Sources */,
+				27765A4F25FD25FD003AE214 /* FetchUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +495,7 @@
 		};
 		27765A3F25FD2540003AE214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3728FADF8B80132636D44F79 /* Pods-BliBliTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +517,7 @@
 		};
 		27765A4025FD2540003AE214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9278598B6ED93BD21CF0AF6B /* Pods-BliBliTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,6 +559,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27765A8925FD299F003AE214 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		27EA04372601147E006586AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27765A8A25FD299F003AE214 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27765A8925FD299F003AE214 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		27EA04382601147E006586AC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27EA04372601147E006586AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27765A2225FD253E003AE214 /* Project object */;
 }
