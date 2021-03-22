@@ -13,12 +13,13 @@ struct DetailPostView: View {
     var Post : PostItemModel
     @State var didStartEditing = false;
     
-    @Environment(\.presentationMode) var presentationView;
+    
     var body: some View {
         VStack{
             HStack(spacing : 15){
                 Button(action: {
-                    presentationView.wrappedValue.dismiss()
+                    PostDB.Move = false;
+                    PostDB.update = true
                     
                 }) {
                     Text("X")
@@ -52,7 +53,7 @@ struct DetailPostView: View {
             }
         }.padding().onAppear(){
             MessageDB.getAllChat(id: Post.id)
-        }
+        }.navigationBarHidden(true).navigationBarBackButtonHidden(true).navigationTitle("")
     }
 }
 

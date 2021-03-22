@@ -37,8 +37,9 @@ public class ProfileViewModel : ObservableObject {
     
     
     public func signOut(){
-        UserDefaults.standard.setValue(nil, forKey: "Phone");
+        
         do{
+            UserDefaults.standard.setValue(nil, forKey: "Phone");
             try Auth.auth().signOut();
         }catch {
             

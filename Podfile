@@ -6,6 +6,7 @@ target 'BliBliTestProject' do
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
+pod 'LTMorphingLabel'
   # Pods for BliBliTestProject
 
 end

@@ -17,11 +17,14 @@ class DetailViewModel : ObservableObject{
     @Published var isChatEmpty = false
     @Published var Message  = ""
     func sendMessage(id : String){
+        print ("mau dapat messagenya \(Message)")
         
         var phone = UserDefaults.standard.string(forKey: "Phone")!
         FetchUser(phone: phone) { (User) in
             self.userModel = User
         }
+        
+        
         
         db.collection("Post").document(id)
             .collection("messages").document().setData([
@@ -35,6 +38,8 @@ class DetailViewModel : ObservableObject{
                 }
                 return
             }
+        
+        Message = ""
         
     }
     
@@ -56,8 +61,9 @@ class DetailViewModel : ObservableObject{
                     let message = doc.document.data()[FirestoreMessage.message] as! String
                     let time = doc.document.data()[FirestoreMessage.time] as! Timestamp
                     FetchUser(phone: User) { (UserModel) in
-                        self.Chat.append(ChatModel (user: UserModel, message: message, time: time.dateValue()
-                        ))
+                        self.Chat.insert(ChatModel (user: UserModel, message: message, time: time.dateValue()), at: 0)
+                        
+                        
                     }
                     
                 }

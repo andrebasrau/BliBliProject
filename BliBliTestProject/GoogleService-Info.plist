@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>797958467360-se75fhempnrla5d5nhg5a2d4hr7brirk.apps.googleusercontent.com</string>
+	<string>1063133017108-hhrau2b28m6et8unq28s8ra3r53hvalj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.797958467360-se75fhempnrla5d5nhg5a2d4hr7brirk</string>
+	<string>com.googleusercontent.apps.1063133017108-hhrau2b28m6et8unq28s8ra3r53hvalj</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCBcFNPZlYQaytlUN0yQb5x7zhY7BuBgs0</string>
+	<string>AIzaSyB1mp9Ci9JQerDeu0PzEiPahCrtwl60PYo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>797958467360</string>
+	<string>1063133017108</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.andre.BliBliTestProject</string>
 	<key>PROJECT_ID</key>
-	<string>bliblitestproj</string>
+	<string>bliblibackupfirebase</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bliblitestproj.appspot.com</string>
+	<string>bliblibackupfirebase.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:797958467360:ios:a8a7ca03a4715e7af77145</string>
+	<string>1:1063133017108:ios:f5d461894b0dd9ec06a301</string>
 </dict>
 </plist>

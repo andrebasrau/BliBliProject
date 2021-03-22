@@ -17,6 +17,7 @@ class NewPostViewModel : ObservableObject{
     @Published var img = Data (count : 0);
     var firestore = Firestore.firestore();
     var id = "";
+    @Published var title = ""
     
     @Published var posting = false
     
@@ -40,6 +41,7 @@ class NewPostViewModel : ObservableObject{
                 return;
             }
             firestore.collection("Post").document().setData([
+                FirestorePost.headTitle : self.title,
                 FirestorePost.title : self.postText,
                 FirestorePost.image : "",
                 FirestorePost.user : UserDefaults.standard.string(forKey: "Phone")!,
@@ -60,7 +62,7 @@ class NewPostViewModel : ObservableObject{
             storeImage(phone : phone , uid : id , imageData: img, path: "post_img") { (url) in
                 if (idForUpdate != ""){
                     self.firestore.collection("Post").document(idForUpdate).updateData([
-                    
+                        FirestorePost.headTitle : self.title,
                         FirestorePost.title : self.postText,
                         FirestorePost.image : url
                     
@@ -74,6 +76,7 @@ class NewPostViewModel : ObservableObject{
                 self.firestore.collection("Post").document().setData([
                     
                     FirestorePost.id : id,
+                    FirestorePost.headTitle : self.title,
                     FirestorePost.title : self.postText,
                     FirestorePost.image : url,
                     FirestorePost.user : UserDefaults.standard.string(forKey: "Phone")!,

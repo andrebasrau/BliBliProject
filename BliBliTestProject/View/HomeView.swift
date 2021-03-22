@@ -30,7 +30,7 @@ struct HomeView: View {
             }.padding(.bottom, -35)
             
             bottomNavigation(page: $page);
-        }.navigationBarBackButtonHidden(true)
+        }.navigationBarBackButtonHidden(true).navigationTitle("").navigationBarHidden(true)
         .background(Color.black.opacity(0.05)).edgesIgnoringSafeArea(.top)
         
     }

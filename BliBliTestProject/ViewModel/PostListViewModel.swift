@@ -11,8 +11,11 @@ import FirebaseFirestore
 
 
 class PostListViewModel : ObservableObject{
+    @Published var update = false;
     
     @Published var textForum : String = "";
+    @Published var searchText : String = ""
+    
     
     @Published var posts : [PostItemModel] = [];
     
@@ -25,7 +28,7 @@ class PostListViewModel : ObservableObject{
     @Published var idForUpdate : String = "";
     var chatMode : [ChatModel] = []
     @Published var Move = false;
-    @Published var PostPending = PostItemModel(id: "", title: "", image: "", time: Date(), user: UserModel(username: "andre", phone: "08121269300", gender: "Male", image: ""), chat: [ChatModel (user: UserModel(username: "andre", phone: "08121269300", gender: "Male", image: ""), message: "donwload hal yang tidak di inginkan", time: Date())]);
+    @Published var PostPending = PostItemModel(id: "", headTitle: "", title: "", image: "", time: Date(), user: UserModel(username: "andre", phone: "08121269300", gender: "Male", image: ""), chat: [ChatModel (user: UserModel(username: "andre", phone: "08121269300", gender: "Male", image: ""), message: "donwload hal yang tidak di inginkan", time: Date())]);
     
     
     
@@ -44,7 +47,7 @@ class PostListViewModel : ObservableObject{
     
     
     public func getAllPosts (){
-        firestore.collection("Post").order(by: FirestorePost.time).addSnapshotListener { (snap, err) in
+        firestore.collection("Post").order(by: FirestorePost.time, descending: false).addSnapshotListener { (snap, err) in
             guard let docs = snap else {
                 self.isPostEmpty = true;
                 return
@@ -62,6 +65,7 @@ class PostListViewModel : ObservableObject{
                 
                 if doc.type == .added{
                     print ("user nya \(doc.document.data()[FirestorePost.user])")
+                    let headTitle = doc.document.data()[FirestorePost.headTitle] as! String
                     let title = doc.document.data()[FirestorePost.title] as! String
                     let time = doc.document.data()[FirestorePost.time] as! Timestamp;
                     let image = doc.document.data()[FirestorePost.image] as! String;
@@ -72,7 +76,10 @@ class PostListViewModel : ObservableObject{
                     
                     FetchUser(phone: user) { (User) in
                         
-                        self.posts.append(PostItemModel(id: doc.document.documentID, title: title, image: image, time: time.dateValue(), user: User, chat: [ChatModel (user: User, message: "donwload hal yang tidak di inginkan, download juga dengan hal yang benar-benar tidak dinginkan bukan untuksemuanya tapi untuk keseluruhan", time: Date())]))
+                        self.posts.insert(PostItemModel(id: doc.document.documentID, headTitle: headTitle, title: title, image: image, time: time.dateValue(), user: User, chat: [ChatModel (user: User, message: "donwload hal yang tidak di inginkan, download juga dengan hal yang benar-benar tidak dinginkan bukan untuksemuanya tapi untuk keseluruhan", time: Date())]), at: 0)
+                        print ("isi dari postdb \(self.posts)")
+                        
+                        
                     }
                 }
                 if (doc.type == .removed){
@@ -103,6 +110,7 @@ class PostListViewModel : ObservableObject{
                     
                     self.idForUpdate = ""
                 }
+                print ("isi dari postdb \(self.posts)")
                 
             }
         }

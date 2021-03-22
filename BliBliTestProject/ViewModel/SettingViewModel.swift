@@ -37,8 +37,10 @@ public class SettingViewModel : ObservableObject{
             self.db.collection("User").document(phone).updateData([
                 FirestoreUser.img : url
             ])
+            self.UserProfile.image = url
             
         }
+        
         
         
     }

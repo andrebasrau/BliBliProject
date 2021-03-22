@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		271AF17725FDDF0400BB4C00 /* StoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271AF17625FDDF0400BB4C00 /* StoreImage.swift */; };
 		272E7D822603422800637BEF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272E7D812603422800637BEF /* DetailViewModel.swift */; };
+		272F02672607B3D80009E384 /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F02662607B3D80009E384 /* SearchingView.swift */; };
+		272F026B2607C71A0009E384 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 272F026A2607C71A0009E384 /* IQKeyboardManagerSwift */; };
+		2733E36F260844DE00ABB816 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2733E36E260844DE00ABB816 /* GoogleService-Info.plist */; };
 		27765A2E25FD253E003AE214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A2D25FD253E003AE214 /* AppDelegate.swift */; };
 		27765A3025FD253E003AE214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A2F25FD253E003AE214 /* SceneDelegate.swift */; };
 		27765A3225FD253E003AE214 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A3125FD253E003AE214 /* ContentView.swift */; };
 		27765A3425FD2540003AE214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27765A3325FD2540003AE214 /* Assets.xcassets */; };
 		27765A3725FD2540003AE214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27765A3625FD2540003AE214 /* Preview Assets.xcassets */; };
 		27765A3A25FD2540003AE214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27765A3825FD2540003AE214 /* LaunchScreen.storyboard */; };
-		27765A4525FD259F003AE214 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4425FD259F003AE214 /* LoginPageViewModel.swift */; };
+		27765A4525FD259F003AE214 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4425FD259F003AE214 /* RegisterViewModel.swift */; };
 		27765A4825FD25C2003AE214 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4725FD25C2003AE214 /* LoginViewModel.swift */; };
 		27765A4B25FD25DC003AE214 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4A25FD25DC003AE214 /* PostListViewModel.swift */; };
 		27765A4F25FD25FD003AE214 /* FetchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A4E25FD25FD003AE214 /* FetchUser.swift */; };
@@ -29,7 +32,6 @@
 		27765A6C25FD26E4003AE214 /* PostViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6B25FD26E4003AE214 /* PostViewList.swift */; };
 		27765A6F25FD26FA003AE214 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27765A6E25FD26FA003AE214 /* NewPostView.swift */; };
 		27765A8B25FD299F003AE214 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27765A8A25FD299F003AE214 /* SDWebImageSwiftUI */; };
-		27765AE425FD2F8A003AE214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27765AE325FD2F8A003AE214 /* GoogleService-Info.plist */; };
 		2780775F26026E110026332C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780775E26026E110026332C /* ChatView.swift */; };
 		27EA040B25FF96FC006586AC /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA040A25FF96FC006586AC /* profileView.swift */; };
 		27EA040E25FF9B14006586AC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA040D25FF9B14006586AC /* ProfileViewModel.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		271AF17625FDDF0400BB4C00 /* StoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreImage.swift; sourceTree = "<group>"; };
 		272E7D812603422800637BEF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		272F02662607B3D80009E384 /* SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingView.swift; sourceTree = "<group>"; };
+		2733E36E260844DE00ABB816 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27765A2A25FD253E003AE214 /* BliBliTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BliBliTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27765A2D25FD253E003AE214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27765A2F25FD253E003AE214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 		27765A3625FD2540003AE214 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27765A3925FD2540003AE214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27765A3B25FD2540003AE214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27765A4425FD259F003AE214 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
+		27765A4425FD259F003AE214 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		27765A4725FD25C2003AE214 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		27765A4A25FD25DC003AE214 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		27765A4E25FD25FD003AE214 /* FetchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUser.swift; sourceTree = "<group>"; };
@@ -69,7 +73,6 @@
 		27765A6825FD26C9003AE214 /* PostItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemView.swift; sourceTree = "<group>"; };
 		27765A6B25FD26E4003AE214 /* PostViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewList.swift; sourceTree = "<group>"; };
 		27765A6E25FD26FA003AE214 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
-		27765AE325FD2F8A003AE214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2780775E26026E110026332C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		27EA040A25FF96FC006586AC /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		27EA040D25FF9B14006586AC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27EA04392601147E006586AC /* SwiftyJSON in Frameworks */,
+				272F026B2607C71A0009E384 /* IQKeyboardManagerSwift in Frameworks */,
 				27765A8B25FD299F003AE214 /* SDWebImageSwiftUI in Frameworks */,
 				6B7EE22901DF8B5C9122791F /* Pods_BliBliTestProject.framework in Frameworks */,
 			);
@@ -121,7 +125,7 @@
 		27765A2C25FD253E003AE214 /* BliBliTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				27765AE325FD2F8A003AE214 /* GoogleService-Info.plist */,
+				2733E36E260844DE00ABB816 /* GoogleService-Info.plist */,
 				27765A2D25FD253E003AE214 /* AppDelegate.swift */,
 				27765A2F25FD253E003AE214 /* SceneDelegate.swift */,
 				27765A4225FD2570003AE214 /* View */,
@@ -157,6 +161,7 @@
 				27EA047526012D8E006586AC /* CardCarouselView.swift */,
 				27FF98732602549E00428CAB /* DetailPostView.swift */,
 				2780775E26026E110026332C /* ChatView.swift */,
+				272F02662607B3D80009E384 /* SearchingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,7 +169,7 @@
 		27765A5825FD2639003AE214 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				27765A4425FD259F003AE214 /* LoginPageViewModel.swift */,
+				27765A4425FD259F003AE214 /* RegisterViewModel.swift */,
 				27765A4725FD25C2003AE214 /* LoginViewModel.swift */,
 				27765A4A25FD25DC003AE214 /* PostListViewModel.swift */,
 				27765A4E25FD25FD003AE214 /* FetchUser.swift */,
@@ -229,6 +234,7 @@
 			packageProductDependencies = (
 				27765A8A25FD299F003AE214 /* SDWebImageSwiftUI */,
 				27EA04382601147E006586AC /* SwiftyJSON */,
+				272F026A2607C71A0009E384 /* IQKeyboardManagerSwift */,
 			);
 			productName = BliBliTestProject;
 			productReference = 27765A2A25FD253E003AE214 /* BliBliTestProject.app */;
@@ -260,6 +266,7 @@
 			packageReferences = (
 				27765A8925FD299F003AE214 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				27EA04372601147E006586AC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				272F02692607C71A0009E384 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 27765A2B25FD253E003AE214 /* Products */;
 			projectDirPath = "";
@@ -277,8 +284,8 @@
 			files = (
 				27765A3A25FD2540003AE214 /* LaunchScreen.storyboard in Resources */,
 				27765A3725FD2540003AE214 /* Preview Assets.xcassets in Resources */,
-				27765AE425FD2F8A003AE214 /* GoogleService-Info.plist in Resources */,
 				27765A3425FD2540003AE214 /* Assets.xcassets in Resources */,
+				2733E36F260844DE00ABB816 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,12 +351,13 @@
 				27FF988A2602652800428CAB /* ChatModel.swift in Sources */,
 				27765A5B25FD2661003AE214 /* dictionary.swift in Sources */,
 				27765A6625FD26A9003AE214 /* HomeView.swift in Sources */,
-				27765A4525FD259F003AE214 /* LoginPageViewModel.swift in Sources */,
+				27765A4525FD259F003AE214 /* RegisterViewModel.swift in Sources */,
 				27765A4B25FD25DC003AE214 /* PostListViewModel.swift in Sources */,
 				27765A3025FD253E003AE214 /* SceneDelegate.swift in Sources */,
 				27765A4825FD25C2003AE214 /* LoginViewModel.swift in Sources */,
 				27EA043026010BB0006586AC /* NetworkManager.swift in Sources */,
 				27765A6F25FD26FA003AE214 /* NewPostView.swift in Sources */,
+				272F02672607B3D80009E384 /* SearchingView.swift in Sources */,
 				27EA040B25FF96FC006586AC /* profileView.swift in Sources */,
 				27765A6925FD26C9003AE214 /* PostItemView.swift in Sources */,
 				27765A5325FD2617003AE214 /* NewPostViewModel.swift in Sources */,
@@ -561,6 +569,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		272F02692607C71A0009E384 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 		27765A8925FD299F003AE214 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -580,6 +596,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		272F026A2607C71A0009E384 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 272F02692607C71A0009E384 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		27765A8A25FD299F003AE214 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 27765A8925FD299F003AE214 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
