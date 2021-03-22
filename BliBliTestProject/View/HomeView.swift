@@ -17,9 +17,13 @@ struct HomeView: View {
                 if (page == 0){
                     PostViewList().padding(.bottom, 30)
                 }else if (page == 1){
-                    NewsView().padding(.bottom, 30)
+                    SearchingView().padding(.bottom, 30)
                     
                 }else if (page == 2){
+                    NewsView().padding(.bottom, 30)
+                }
+                
+                else if (page == 3){
                     profileView(LoginView : LoginView).padding(.bottom, 30);
                 }
                 
@@ -57,16 +61,16 @@ struct bottomNavigation : View{
             Button(action: {
                 page = 2;
             }, label: {
-                Image(systemName: "person.fill")
+                Image(systemName: "safari.fill")
             }).foregroundColor(Color.black.opacity(page == 2 ? 1 : 0.1))
             
-//            Spacer();
+            Spacer();
             
-//            Button(action: {
-//                page = 3;
-//            }, label: {
-//                Image(systemName: "person.fill")
-//            }).foregroundColor (Color.black.opacity(page == 3 ? 1 : 0.1))
+            Button(action: {
+                page = 3;
+            }, label: {
+                Image(systemName: "person.fill")
+            }).foregroundColor (Color.black.opacity(page == 3 ? 1 : 0.1))
 //
         }.padding(.horizontal, 35)
         .padding(.vertical, 20)

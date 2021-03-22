@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var registerView = LoginPageViewModel()
+    @StateObject var registerView = RegisterViewModel()
     @StateObject var loginView = loginViewModel();
 
     
@@ -67,7 +67,7 @@ struct ContentView_Previews: PreviewProvider {
 
 struct Home: View{
         
-    var registerView : LoginPageViewModel;
+    var registerView : RegisterViewModel;
     var loginView : loginViewModel;
     
     
@@ -121,7 +121,7 @@ struct Home: View{
 struct register : View{
     
     
-    @StateObject var registerView : LoginPageViewModel;
+    @StateObject var registerView : RegisterViewModel;
     
     
     
@@ -208,17 +208,17 @@ struct customeBottomSheet : View{
     @StateObject var loginView :
         loginViewModel;
     
-    @StateObject var registerView : LoginPageViewModel;
+    @StateObject var registerView : RegisterViewModel;
     var body : some View{
         
         VStack(spacing : 15){
             
             if (loginView.show){
-                customeBottomSheetLogin(loginView: loginView);
+                customeBottomSheetLogin(loginView: loginView)
             };if (registerView.show){
-                customeBottomSheetRegister (status: registerView.status);
+                customeBottomSheetRegister (status: registerView.status)
             };if (loginView.show2){
-                customeBottomSheetRegister(status: loginView.status);
+                customeBottomSheetRegister(status: loginView.status)
             }
         }.padding(.bottom, 25).padding(.top, 25)
         .padding(.horizontal)
@@ -248,7 +248,7 @@ struct customeBottomSheetLogin : View{
             
             TextField("OTP CODE", text: $loginView.OTP)
             Button(action: {loginView.clickAlert()}, label: {
-                Text("Button").fontWeight(.bold)
+                Text("Verify").fontWeight(.bold)
                     .padding()
                     .frame(width: ((UIScreen.main.bounds.width-50))).foregroundColor(.white)
             }).background(Color.blue).clipShape(Capsule())

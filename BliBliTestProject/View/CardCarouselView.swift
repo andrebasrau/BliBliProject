@@ -10,20 +10,21 @@ import SDWebImageSwiftUI
 struct CardCarouselView: View {
     var newsmodel : NewsData
     var body: some View {
-        VStack(alignment :.leading, spacing : 0){
+        VStack(){
             WebImage(url: URL(string: newsmodel.image))
-                .resizable ().frame(width: UIScreen.main.bounds.width - 30, height : 200)
+                .resizable ().frame(width: UIScreen.main.bounds.width-30, height : 200)
             
             VStack {
+                
                 Text(newsmodel.title)
                     .fontWeight(.bold)
                     .padding(.vertical, 13)
                     .frame(width: UIScreen.main.bounds.width-30)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.white)
                     .lineLimit(1)
-            };
+            }.background(Color.black.opacity(0.5))
             
-        }.cornerRadius(25).shadow (color :Color.black, radius : 5)
+        }.cornerRadius(25).frame( height: 50).shadow(radius: 5)
     }
 }
 

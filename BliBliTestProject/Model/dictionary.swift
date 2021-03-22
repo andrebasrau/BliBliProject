@@ -20,10 +20,12 @@ struct FirestoreUser{
 
 struct FirestorePost {
     static let id = "id"
+    static let headTitle = "HeadTitle"
     static let title = "Title"
     static let time = "Time"
     static let image = "Image"
     static let user = "User"
+    static let chat = "Chat"
 }
 
 struct FirestoreMessage {

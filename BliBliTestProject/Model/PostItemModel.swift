@@ -10,6 +10,7 @@ import Foundation
 struct PostItemModel : Identifiable {
     
     var id : String;
+    var headTitle : String
     var title : String;
     var image : String;
     var time : Date

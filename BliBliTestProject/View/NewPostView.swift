@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewPostView: View {
     @StateObject var newPostViewModel = NewPostViewModel();
-    
+    @State var title = "";
     var id : String;
     
     @Environment(\.presentationMode) var presentationView;
@@ -73,6 +73,8 @@ struct NewPostView: View {
                 }.padding ()
                 
             }
+            TextField("input judul", text: $newPostViewModel.title).padding().background(Color.white)
+            
             TextEditor(text: $newPostViewModel.postText).padding();
             
             

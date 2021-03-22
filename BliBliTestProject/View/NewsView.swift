@@ -14,9 +14,11 @@ struct NewsView: View {
     @State var x : CGFloat = 0
     @State var count : CGFloat = 0
     @State var screen = UIScreen.main.bounds.width - 30
+    @State var counter = 0
     var edges = UIApplication.shared.windows.first?.safeAreaInsets;
     var body: some View {
-        NavigationView{
+        
+            
             VStack(spacing : 0) {
                 HStack{
                     Text("News")
@@ -32,16 +34,46 @@ struct NewsView: View {
                 
                 
                 Spacer(minLength: 10)
-                ScrollView(.horizontal, showsIndicators :false){
+                
+                if (!newsManager.NewsDatas.isEmpty){
                     
-                    HStack(spacing : 15){
-                        ForEach(newsManager.NewsDatas){ i in
-                            NavigationLink(destination: webView(url : i.url).navigationBarTitle ("", displayMode : .inline)){
-                                CardCarouselView (newsmodel : i)
+                        TabView {
+                            ForEach(newsManager.NewsDatas){
+                                i in
+                                CardCarouselView(newsmodel: i)
                             }
-                        }
-                    }
-                }.frame (height : 300).padding(.top, -35).padding(.horizontal, 10)
+                        }.tabViewStyle(PageTabViewStyle())
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .padding ()
+                        .frame (width: UIScreen.main.bounds.width - 30, height: 300)
+                        .id(newsManager.NewsDatas.count)
+                    
+                }
+                
+                    
+                
+                    
+                
+                
+                
+//
+////
+//                ScrollView(.horizontal, showsIndicators :false){
+//
+//                    HStack(spacing : 15){
+//                        ForEach(newsManager.NewsDatas){ i in
+//                            CardCarouselView (newsmodel : i).onTapGesture{
+//                                newsManager.show = true
+//                                newsManager.urlPending = i.url
+//                            }
+//
+//                        }
+//                    }
+//                }.frame (height : 300).padding(.top, -35).padding(.horizontal, 10)
+
+                
+                //--------------- ini kepisah --------------
+                
                 
 //                HStack(spacing : 15){
 //                    ForEach(newsManager.NewsDatas){ i in
@@ -83,30 +115,32 @@ struct NewsView: View {
                 
                 List (newsManager.NewsEverything){i in
                     
-                    NavigationLink(destination: webView(url : i.url).edgesIgnoringSafeArea(.top).navigationBarTitle ("", displayMode : .inline)){
-                        HStack (spacing : 15){
+                        HStack (spacing: 15){
                             VStack (alignment: .leading, spacing: 10, content: {
                                 Text(i.title).fontWeight(.heavy)
                                 Text(i.desc).lineLimit(2)
                             })
                             if (i.image != ""){
-                                WebImage(url : URL(string: i.image)!, options: .highPriority, context: nil).frame (width: 110, height : 135).cornerRadius(20)
+                                WebImage(url: URL(string: i.image)!, options: .highPriority, context: nil).frame (width: 110, height: 135).cornerRadius(20)
                                 
                             }
                             
                             
+                        }.onTapGesture {
+                            newsManager.show = true;
+                            newsManager.urlPending = i.url
                         }
-                    }
                     
                     
                     
                     
-                }.padding(.vertical, 5)
+                }.padding(.bottom, 5)
                 
-            }.ignoresSafeArea().background(Color.black.opacity(0.05))
+            }.edgesIgnoringSafeArea(.top).sheet(isPresented: $newsManager.show) {
+                webView(url: newsManager.urlPending)
+            }
             
-            
-        }
+        
     }
 }
 

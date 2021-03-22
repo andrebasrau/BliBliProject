@@ -59,8 +59,14 @@ struct PostItemView: View {
                     .cornerRadius(15)
             }
             HStack{
-                Text(post.title)
+                Text(post.headTitle)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
+                Spacer(minLength: 0)
+            }.padding(.top, 5)
+            HStack{
+                Text(post.title)
+                    .font(.caption)
                     .foregroundColor(.black)
                 Spacer(minLength: 0)
             }.padding(.top, 5)

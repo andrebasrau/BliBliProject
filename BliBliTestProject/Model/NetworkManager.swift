@@ -11,6 +11,9 @@ class NetworkManager : ObservableObject {
     
     @Published var NewsDatas = [NewsData]()
     @Published var NewsEverything = [NewsData]()
+    @Published var show = false;
+    @Published var urlPending = ""
+    @Published var counter = 0
     
     func getHeadLine (){
         let source = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=80927641a04449b483307ebb07c9f515"
@@ -30,7 +33,7 @@ class NetworkManager : ObservableObject {
                 let image = i.1["urlToImage"].stringValue
                 let id = i.1["publishedAt"].stringValue
                 DispatchQueue.main.async{
-                    self.NewsDatas.append(NewsData (id : id , title :title, desc : description, url : url , image : image))
+                    self.NewsDatas.append(NewsData (id : id , title :title, desc: description, url: url , image : image))
                 }
                 
                 
@@ -71,12 +74,17 @@ class NetworkManager : ObservableObject {
         
     }
     
+    func counterPlus (){
+        counter+=1;
+    }
+    
     func getMiddleIndex ()-> Int{
         return NewsEverything.count / 2;
     }
     
     
     init (){
+        counter = 0;
         getHeadLine();
         getEverything();
     }
